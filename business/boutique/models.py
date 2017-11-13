@@ -20,3 +20,7 @@ class Product(models.Model):
         return self.nom
     
 
+class Image(models.Model):
+    nom = models.CharField(max_length=200)
+    image = models.ImageField()
+    product = models.ForeignKey(Product, null=True)
