@@ -1,0 +1,5 @@
+cp -r /home/julien/.che-multiuser-new/instance/data/workspaces/wksp-3jmq/business/boutique/static /builds/stack/business/boutique/
+cp -r /home/julien/.che-multiuser-new/instance/data/workspaces/wksp-3jmq/business/boutique/templates /builds/stack/business/boutique/
+cp -r /home/julien/.che-multiuser-new/instance/data/workspaces/wksp-3jmq/business/business/* /builds/stack/business/business/
+cp /home/julien/.che-multiuser-new/instance/data/workspaces/wksp-3jmq/business/boutique/* /builds/stack/business/boutique/
+cp /home/julien/.che-multiuser-new/instance/data/workspaces/wksp-3jmq/requirements.txt /builds/stack/

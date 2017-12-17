@@ -1,0 +1,19 @@
+
+
+<h2>Nouveau compte utilisateur</h2>
+
+
+
+<form method="post" class="form" id='register' action='{% url "registration_register" %}'>
+    {% csrf_token %}
+    
+    {% bootstrap_form form layout='inline' %}
+    
+ 
+    
+    {% buttons %}
+    <button type="submit" class="btn btn-primary" value='register'>
+     Register
+    </button>
+    {% endbuttons %}
+</form>

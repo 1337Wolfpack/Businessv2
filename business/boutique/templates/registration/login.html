@@ -1,0 +1,26 @@
+
+<div id='loginform'>
+  <h2>Login</h2>
+  <form method="post" id="Login">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button id='loginbtn' type="submit" value="Login">Login</button>
+  </form>
+  <div id="error"></div>
+</div> 
+
+<script>
+
+$("#loginbtn").on('click', function() {
+
+var username=$("#username").val();
+var password=$("#password").val();
+
+$.when( $.post("/accounts/login/", { 'username' : username, 'password' : password } )  ).done(function( data ) {
+        $( "#form" ).html( data );
+});
+
+});
+ 
+  
+</script>

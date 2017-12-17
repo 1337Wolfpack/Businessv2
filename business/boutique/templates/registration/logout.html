@@ -1,0 +1,11 @@
+
+
+
+
+
+  <h2>Successfully logged out</h2>
+  <form method="post" id='logout'  action=$.get('{% url "auth_logout" %}')>
+   {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" value='logout'>Close</button>
+  </form>
